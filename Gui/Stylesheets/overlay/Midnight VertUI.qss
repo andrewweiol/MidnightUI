@@ -1,0 +1,289 @@
+* {
+  color: #E6E6E6;
+  alternate-background-color: transparent;
+}
+
+QComboBox,
+QComboBox:editable,
+QComboBox:!editable,
+QLineEdit,
+QTextEdit,
+QPlainTextEdit,
+QAbstractSpinBox,
+QDateEdit,
+QDateTimeEdit {
+  background-color: rgba(20, 20, 26, 0.7);
+  padding-left: 3px;
+  min-height: 18px;
+  border-radius: 4px;
+  margin-top: 0px;
+}
+
+QCheckBox:disabled,
+QComboBox:disabled,
+QAbstractSpinBox:disabled,
+QLineEdit:disabled,
+QTextEdit:disabled,
+QPlainTextEdit:disabled,
+QTimeEdit:disabled,
+QDateEdit:disabled,
+QDateTimeEdit:disabled {
+  color: rgba(103, 103, 115, 1);
+  background-color: transparent;
+}
+
+/* Gui--OverlayTabWidget#OverlayBottom Gui--OverlaySplitter {
+  margin-left: 6px; 
+  margin-right: 0px;
+}
+
+Gui--OverlayTabWidget#OverlayLeft Gui--OverlaySplitter {
+  margin-top: 6px;
+} */
+
+QAbstractSpinBox {
+  padding-left: 1px;
+}
+
+ExpressionLabel {
+    background-color: transparent;
+    margin-top: 1px;
+}
+
+ExpressionLabel:disabled {
+    background-color: transparent;
+    margin-top: 1px;
+}
+
+/* ===== REPORT VIEW & PYTHON CONSOLE ==== */
+Gui--PythonConsole,
+Gui--DockWnd--ReportOutput  {
+  background-color: rgba(52, 53, 60, 1); /* Same as viewport */
+  border-radius: 8px;
+  margin: 1px;
+}
+
+/* ===== PROPERTY VIEW ===== */
+Gui--TreeWidget, 
+Gui--DockWnd--PropertyDockView QTreeView {
+  selection-background-color: rgba(30, 30, 38, 0.3);
+  margin: 0px;
+  margin-left: 1px;
+}
+
+Gui--PropertyEditor--PropertyEditor QLabel {
+  background-color: #1e1e26;
+}
+
+Gui--PropertyEditor--PropertyEditor QComboBox,
+Gui--PropertyEditor--PropertyEditor QComboBox:editable,
+Gui--PropertyEditor--PropertyEditor QComboBox:!editable,
+Gui--PropertyEditor--PropertyEditor QLineEdit,
+Gui--PropertyEditor--PropertyEditor QTextEdit,
+Gui--PropertyEditor--PropertyEditor QPlainTextEdit,
+Gui--PropertyEditor--PropertyEditor QSpinBox,
+Gui--PropertyEditor--PropertyEditor QAbstractSpinBox,
+Gui--PropertyEditor--PropertyEditor QDateEdit,
+Gui--PropertyEditor--PropertyEditor QDateTimeEdit {
+  background-color: rgba(20, 20, 20, 0.7);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+Gui--DockWnd--PropertyDockView QCheckBox:disabled,
+Gui--DockWnd--PropertyDockView QComboBox:disabled,
+Gui--DockWnd--PropertyDockView QAbstractSpinBox:disabled,
+Gui--DockWnd--PropertyDockView QLineEdit:disabled,
+Gui--DockWnd--PropertyDockView QTextEdit:disabled,
+Gui--DockWnd--PropertyDockView QPlainTextEdit:disabled,
+Gui--DockWnd--PropertyDockView QTimeEdit:disabled,
+Gui--DockWnd--PropertyDockView QDateEdit:disabled,
+Gui--DockWnd--PropertyDockView QDateTimeEdit:disabled {
+  color: transparent;
+}
+/* ===== END PROPERTY VIEW =====*/
+
+QTabWidget::pane { /* Background for the PropertyEditor and TaskPanel */
+  background-color: transparent;
+  border: transparent;
+  margin-top: 0px;
+}
+
+Gui--OverlayTabWidget::tab-bar:top,
+Gui--OverlayTabWidget::tab-bar:bottom {
+    left: 10px;
+    alignment: left;
+}
+
+Gui--OverlayTabWidget::tab-bar:left,
+Gui--OverlayTabWidget::tab-bar:right {
+    top: 10px;
+    alignment: top;
+}
+
+Gui--OverlayTabWidget::pane {
+  background-color: transparent;
+}
+
+Gui--OverlayProxyWidget {
+  qproperty-hintColor: rgba(50, 50, 50, 0.6);
+}
+
+Gui--OverlayToolButton { /* Main overlay buttons */
+  background: transparent;
+  border-radius: 4px;
+  padding: 1px;
+  min-width: 12px;
+  min-height: 12px;
+}
+
+Gui--OverlayToolButton::hover {
+  background: #90D2C4;
+}
+
+Gui--OverlayToolButton::focus {
+  background: rgba(150,150,150,0.5);
+}
+
+Gui--OverlayToolButton::pressed {
+  background: #D57346;
+}
+
+Gui--OverlayToolButton::checked {
+  background: #D57346;
+}
+
+Gui--OverlayToolButton::checked:hover {
+  background: rgba(150,150,150,0.9);
+}
+
+QTreeView,
+QTableView {
+  background-color: rgba(52, 53, 60, 1);
+  border-radius: 8px;
+  border: transparent;
+}
+
+QListView {
+  background-color: transparent;
+}
+QListView:item {
+  padding: 5px;
+}
+
+Gui--Dialog--DlgPropertyLink > Gui--ExpressionLineEdit {
+  background-color: #14141A;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+Gui--Dialog--DlgPropertyLink > QTreeWidget {
+  background-color: #14141A;
+}
+
+Gui--Dialog--DlgPropertyLink > QTreeWidget > QHeaderView {
+  max-height: 20px;
+  background-color: rgba(20, 20, 26, 0.7);
+}
+
+/* ===== OVERLAY TITLES & SPLITTERS ===== */
+Gui--OverlayTitleBar,
+Gui--OverlaySplitterHandle {
+  color: rgba(30, 30, 38, 0.9);
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+/* ===== OVERLAY GRIPS ===== */
+Gui--OverlayTabWidget#OverlayBottom Gui--OverlaySizeGrip {
+  min-width: 5px;
+  min-height: 5px;
+  max-height: 5px;
+  max-width: 20px;
+}
+
+Gui--OverlayTabWidget#OverlayRight Gui--OverlaySizeGrip { /* Preventing changing task panel width */
+  max-width: 0px;
+  max-height: 0px;
+  min-height: 0px;
+  max-height: 0px;
+}
+
+/* ====== TASK VIEW ===== */
+Gui--TaskView--TaskPanel { /* Task Panel large background */
+  background-color: rgba(52, 53, 60, 1); /* Same as viewport! */
+}
+
+Gui--TaskView--TaskPanel QFrame[class="content"] {
+  background-color: rgba(30, 30, 38, 0.8); /* Task Panel background color */
+}
+
+Gui--TaskView--TaskPanel QFrame[class="content"] > QWidget {
+  background-color: transparent; /* Task Panel background color */
+}
+
+Gui--TaskView--TaskPanel QFrame[class="content"] QTreeView,
+Gui--TaskView--TaskPanel QFrame[class="content"] QListView,
+Gui--TaskView--TaskPanel QFrame[class="content"] QTableView {
+  background-color: rgba(20, 20, 26, 0.7);
+}
+
+/* ===== END TASK VIEW ===== */
+
+QGroupBox { /* Group Box Title */
+  color: #737380;
+}
+
+QSint--ActionPanel {
+  margin: 0;
+  padding: 0;
+}
+
+/* Scroll Bars */
+QScrollBar::handle:vertical {
+  background-color: rgba(30, 30, 38, 0.7);
+}
+
+QScrollBar::handle:vertical:hover {
+  background-color: rgba(213, 115, 70, 1);
+}
+
+QScrollBar:hover {
+  background-color: rgba(103, 103, 115, 0.2)
+}
+
+/* The OverlayTabWidget is named as OverlayLeft, OverlayRight, OverlayTop, OverlayBottom.
+To customize for each overlay docking site, use the following selector
+
+Gui--OverlayTabWidget#OverlayLeft {}
+*/
+
+/*Gui--OverlayTabWidget {
+  qproperty-effectColor: rgba(50, 50, 50, 200);
+  qproperty-effectBlurRadius: 2.0;
+  qproperty-effectOffsetX: 0.0;
+  qproperty-effectOffsetY: 0.0;
+  qproperty-effectWidth: 1;
+  qproperty-effectHeight: 1;
+  qproperty-enableEffect: 0;
+}*/
+
+/* Use the following selector to customize title bar for each side */
+/* Gui--OverlayTabWidget#OverlayLeft Gui--OverlayTitleBar,
+   Gui--OverlayTabWidget#OverlayLeft QSplitter Gui--OverlaySplitterHandle {
+     background-color: qlineargradient(
+       spread:pad, x1:0, y1:1, x2:0, y2:0,
+       stop:0 #80202020, stop:1 #00202020);
+   }*/
+
+/* Property Editor Header ONLY 
+Gui--PropertyEditor--PropertyEditor {
+  qproperty-groupTextColor: rgba(255, 255, 255, 0.8);
+  qproperty-groupBackground: rgba(0, 0, 0, 0.1); 
+  qproperty-itemBackground: rgba(0, 0, 0, 0.00); 
+}*/

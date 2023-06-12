@@ -1,0 +1,3 @@
+TreeItemVisibleOnTop, iconset:Midnight/TreeItemVisibleOnTop.svg
+TreeItemVisible, iconset:Midnight/TreeItemVisible.svg
+TreeItemInvisible, iconset:Midnight/TreeItemInvisible.svg
